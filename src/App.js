@@ -1,13 +1,12 @@
-import './App.css';
+import './App.scss';
 import Feature from './components/Feature/Feature';
-import HelloWorld from './components/hello-world/HelloWorld';
 
 function App() {
   return (
     <div className='App'>
-      <Feature />
-      <Feature />
-      <Feature />
+      <Feature heading='heading test' title='title test' />
+      <Feature>test children</Feature>
+      {/* giá trị ở giữa 2 div đóng mở là children bên prop */}
     </div>
   );
 }
