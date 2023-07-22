@@ -1,3 +1,5 @@
+import './Feature.scss';
+
 const Feature = ({ children, heading, title }) => {
   return (
     <div className='feature'>
