@@ -1,10 +1,10 @@
 import './App.scss';
-import Feature from "./components/Feature/Feature";
+import Parent from './components/Parent/Parent';
 
 function App() {
   return (
     <div className='App'>
-      <Feature/>
+      <Parent />
     </div>
   );
 }
