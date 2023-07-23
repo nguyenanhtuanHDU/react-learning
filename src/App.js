@@ -1,10 +1,10 @@
 import './App.scss';
-import ToDo from './components/ToDo/ToDo';
+import Feature from "./components/Feature/Feature";
 
 function App() {
   return (
     <div className='App'>
-      <ToDo></ToDo>
+      <Feature/>
     </div>
   );
 }
