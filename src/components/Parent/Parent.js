@@ -5,15 +5,19 @@ const Parent = () => {
   console.log('parent re render');
   const [count, setCount] = useState(0);
 
-  const handleClick = useCallback(() => {
+  const handleClick = () => {
     setCount((count) => count + 1);
+  };
+
+  const handleReset = useCallback(() => {
+    setCount(0);
   }, []);
 
   return (
     <>
       {count}
       <button onClick={() => handleClick()}>Add</button>
-      <Child />
+      <Child onReset={handleReset} />
     </>
   );
 };
