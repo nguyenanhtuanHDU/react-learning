@@ -1,10 +1,10 @@
 import './App.scss';
-import Parent from './components/Parent/Parent';
+import Couters from './components/Couters/Couters';
 
 function App() {
   return (
     <div className='App'>
-      <Parent />
+      <Couters />
     </div>
   );
 }
